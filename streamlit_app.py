@@ -8,7 +8,7 @@ with open ('final_model_xgb.pkl','rb') as file:
     model = pickle.load(file)
 
 def prediction(input_data):
-    input_data = np.array(input_data,dtype = "object")
+    input_data = np.array(input_data, dtype='object')
     
     pred = model.predict_proba(input_data)[:,1][0]
     
@@ -18,11 +18,11 @@ def prediction(input_data):
         return f' This booking is less likely to get canceled : Chances = {round(pred*100,2)}%'
     
 def main():
-    st.title('INN Hotels')    
-
+    
+    st.title('INN Hotels')
+    st.image('inn-hotels-official-color.jpg',use_column_width=True)
     lt = st.text_input('Enter lead time. ')
     mkt = (lambda x: 1 if x == 'Online' else 0)(st.selectbox('Enter the type of booking', ['Online', 'Offline']))
-    mkt = market[market_res]
     spcl = st.selectbox('How many special requests have been made?',[0,1,2,3,4,5])
     price = st.text_input('Enter the price of the room.')
     adults = st.selectbox('How many adults per room?', [1,2,3,4])
@@ -32,7 +32,7 @@ def main():
     arr_d = st.slider('What will be the day of arrival', min_value=1, max_value=31, step=1)
     arr_m = st.slider('What will be the month of arrival', min_value=1, max_value=12, step=1)
     weekd_lambda = (lambda x : 0 if x=='Mon' else 1 if x=='Tues' else 2 if x=='Wed' else 3 if x=='Thrus' else 4 if x=='Fri' else 5 if x=='Sat' else 6)
-    arr_wd = weekd_lambda(st.selectbox('What is the weekday of arrival?'['Mon', 'Tues', 'Wed', 'Thrus', 'Fri', 'Sat', 'Sun']))
+    arr_wd = weekd_lambda(st.selectbox('What is the weekday of arrival?',['Mon', 'Tues', 'Wed', 'Thrus', 'Fri', 'Sat', 'Sun']))
 
     input_list = [[lt, mkt, spcl, price, adults, wknd, prk, wk, arr_d, arr_m, arr_wd]]
 
@@ -41,4 +41,4 @@ def main():
         st.success(response)
 
 if __name__ == '__main__':
-    main()
+    main()        
