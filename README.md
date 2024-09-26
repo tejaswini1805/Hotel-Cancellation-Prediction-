@@ -1,1 +1,1 @@
-App Link - https://innhotel-kk6jc2ixfpzhtav6ahout4.streamlit.app/
+App Link - https://innhotel-kupxpaoz6rx3p6rw7sm2jj.streamlit.app/
