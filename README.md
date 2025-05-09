@@ -85,26 +85,7 @@ Trained and evaluated multiple models:
 
 ---
 
-## 💻 How to Run the App
 
-1. **Clone the repository:**
-    ```bash
-    git clone https://github.com/your-username/hotel-cancellation-prediction.git
-    ```
-
-2. **Install the dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3. **Run the Streamlit app:**
-    ```bash
-    streamlit run app.py
-    ```
-
----
-
-⭐ **Feel free to star this repository if you find it useful!**
 
 
 
