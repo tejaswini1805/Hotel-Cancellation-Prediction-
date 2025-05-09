@@ -1,106 +1,112 @@
 App Link - https://innhotel-kupxpaoz6rx3p6rw7sm2jj.streamlit.app/
 
-Hotel Booking Cancellation Prediction 🏨🔮
-This project focuses on predicting hotel booking cancellations using machine learning. The goal is to analyze booking data, preprocess it, build predictive models, and deploy the best model to predict cancellation probabilities in real time.
+# 🏨 Hotel Booking Cancellation Prediction
 
-🔥 Key Objectives
-Analyze booking data to uncover patterns and insights.
+This project predicts hotel booking cancellations using **machine learning**. The goal is to analyze booking data, build predictive models, and deploy the best-performing model for real-time cancellation predictions.
 
-Build and evaluate machine learning models to predict cancellations.
+---
 
-Deploy the best-performing model with a user-friendly Streamlit interface.
+## 🎯 Key Objectives
 
-🚩 Features of the Project
-Detailed data analysis and preprocessing steps.
+- Analyze booking data to uncover patterns and insights.
+- Build and evaluate ML models to predict cancellations.
+- Deploy the model with a user-friendly **Streamlit** interface.
 
-Multiple classification models evaluated for optimal performance.
+---
 
-A Streamlit-based interactive interface for real-time predictions.
+## 🚀 Features
 
-📊 Project Workflow
-1. Exploratory Data Analysis (EDA)
-Visualization:
-Analyzed booking patterns, cancellation rates, and feature correlations using Matplotlib.
+- Detailed **EDA** and data preprocessing steps.
+- Multiple classification models compared.
+- Deployed using **Streamlit** for real-time prediction.
 
-Outlier Detection:
-Used box plots and statistical methods to identify and handle outliers.
+---
 
-Handling Missing Data:
+## 📝 Project Workflow
 
-Dropped columns with excessive null values.
+### 1. Exploratory Data Analysis (EDA)
+- **Visualization:** Analyzed booking patterns, cancellation rates, and correlations using Matplotlib.
+- **Outlier Detection:** Identified and handled outliers using box plots and statistical methods.
+- **Missing Data Handling:**
+  - Dropped columns with excessive null values.
+  - Imputed missing values appropriately.
 
-Imputed missing values using appropriate techniques.
+### 2. Inferential Statistics
+- Performed statistical tests (e.g., **Mann-Whitney U Test**) to find relationships between variables and cancellations.
 
-2. Inferential Statistics
-Performed statistical tests (e.g., Mann-Whitney U Test) to examine relationships between variables and cancellations.
+### 3. Feature Engineering
+- Created new features to boost model performance.
+- Encoded categorical variables and normalized numerical features.
 
-3. Feature Engineering
-Created new features to enhance model performance.
+### 4. Predictive Modeling
+Trained and evaluated multiple models:
+- Logistic Regression
+- Decision Tree
+- Random Forest
+- **XGBoost** ✅ (Best Model)
+- AdaBoost
+- Naive Bayes
+- Gradient Boosting
 
-Encoded categorical variables and normalized numerical attributes.
+**Metrics Used:**
+- Accuracy
+- Precision
+- Recall
+- F1-score
 
-4. Predictive Modeling
-Trained and evaluated the following models:
+### 5. Model Tuning
+- Fine-tuned the **XGBoost** model with hyperparameter optimization.
+- Achieved **80% accuracy** on test data.
+- Saved the final model using **Pickle**.
 
-Logistic Regression
+### 6. Deployment
+- Built an interactive app using **Streamlit**.
+- Users can input booking details and get real-time cancellation predictions.
 
-Decision Trees
+---
 
-Random Forest
+## 🛠 Requirements
 
-XGBoost (Best-Performing Model 🚀)
+- Python 3.7+
+- Libraries:
+  - `pandas`
+  - `scikit-learn`
+  - `matplotlib`
+  - `xgboost`
+  - `streamlit`
+  - `pickle`
 
-AdaBoost
+---
 
-Naive Bayes
+## ✅ Results
 
-Gradient Boosting
+- **XGBoost** achieved **80%** accuracy, making it the best-performing model.
+- A simple and user-friendly **Streamlit interface** for real-world use in the hospitality sector.
 
-Compared models using:
+---
 
-Accuracy
+## 💻 How to Run the App
 
-Precision
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/your-username/hotel-cancellation-prediction.git
+    ```
 
-Recall
+2. **Install the dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-F1-score
+3. **Run the Streamlit app:**
+    ```bash
+    streamlit run app.py
+    ```
 
-5. Model Tuning
-Fine-tuned the XGBoost model using hyperparameter optimization.
+---
 
-Achieved an accuracy of 80% on the test data.
+⭐ **Feel free to star this repository if you find it useful!**
 
-Saved the final model using Pickle for deployment.
 
-6. Deployment
-Developed an interactive interface using Streamlit.
-
-Allows users to input booking details and get real-time predictions on cancellation likelihood.
-
-🛠 Requirements
-
-Libraries:
-
-pandas
-
-scikit-learn
-
-matplotlib
-
-xgboost
-
-streamlit
-
-pickle
-
-Environment:
-Jupyter Notebook, Streamlit App
-
-✅ Results
-The XGBoost model emerged as the best-performing model with an accuracy of 80%.
-
-A user-friendly Streamlit interface enables real-time predictions, making the model practical for deployment in the hospitality industry.
 
 
 
